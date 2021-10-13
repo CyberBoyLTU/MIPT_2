@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">MIPT_2</string>
+
+    <string name="countedWords">Counted:</string>
+    <string name="countButton">Calculate</string>
+    <string name="countSpinner">Count by</string>
+    <string name="inputHint">Enter text</string>
+
+    <string-array name="countByArray">
+        <item>Words</item>
+        <item>Dots</item>
+        <item>Comas</item>
+        <item>Spaces</item>
+    </string-array>
 </resources>
