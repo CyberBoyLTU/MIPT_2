@@ -8,24 +8,12 @@
 
     <TextView
         android:id="@+id/countResult"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="296dp"
-        android:layout_marginBottom="92dp"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/countText" />
-
-    <TextView
-        android:id="@+id/countText"
-        android:layout_width="89dp"
-        android:layout_height="29dp"
-        android:layout_marginStart="23dp"
-        android:layout_marginEnd="299dp"
-        android:layout_marginBottom="91dp"
-        android:text="@string/countedWords"
+        android:layout_width="175dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="118dp"
+        android:layout_marginEnd="118dp"
+        android:layout_marginBottom="101dp"
+        android:textAlignment="center"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -40,20 +28,21 @@
         android:layout_marginEnd="11dp"
         android:layout_marginBottom="22dp"
         android:text="@string/countSpinner"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintBottom_toTopOf="@+id/countButton"
         app:layout_constraintEnd_toStartOf="@+id/countTypeSpinner"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textInput" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/countButton"
         android:layout_width="369dp"
         android:layout_height="60dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="18dp"
-        android:layout_marginBottom="24dp"
+        android:layout_marginBottom="10dp"
+        android:onClick="btnClick"
         android:text="@string/countButton"
-        app:layout_constraintBottom_toTopOf="@+id/countText"
+        app:layout_constraintBottom_toTopOf="@+id/countResult"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
@@ -83,7 +72,7 @@
         android:layout_marginBottom="6dp"
         android:entries="@array/countByArray"
         android:spinnerMode="dialog"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintBottom_toTopOf="@+id/countButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/countByText" />
 
